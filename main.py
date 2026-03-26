@@ -3,9 +3,22 @@ from agents.my_agent import agent
 # 主函数
 def main():
     print("=" * 50)
-    print("LangChain 智能体已启动（LangGraph 版本）！")
+    print("LangChain 智能体已启动（支持互联网访问）！")
+    print("现在可以获取实时信息")
     print("输入 'quit' 退出")
     print("=" * 50)
+    
+    # 显示可用工具
+    print("\n可用工具:")
+    from agents.my_agent import tools
+    for tool in tools:
+        print(f"  • {tool.name}: {tool.description}")
+    
+    print("\n示例问题:")
+    print("  'Google搜索Python官网'")
+    print("  '获取GitHub主页内容'")
+    print("  '计算2+3*4是多少'")
+    print("  '翻转这个字符串: hello'\n")
 
     # 配置会话 ID（用于记忆）
     config = {"configurable": {"thread_id": "1"}}

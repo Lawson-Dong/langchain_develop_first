@@ -8,4 +8,10 @@ dependencies = [
     "langchain>=1.2.13",
     "langchain-deepseek>=1.0.1",
     "python-dotenv>=1.2.2",
+    "beautifulsoup4>=4.14.0",
+    "requests>=2.32.0",
+    "langgraph>=0.2.0",
+    "pandas>=3.0.0",
+    "numpy>=2.0.0",
+    "tavily-python>=0.7.0",
 ]
